@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none; /*去掉列表默认样式*/
+        text-decoration: none; /*去掉文字默认样式*/
+        background-color: #888;
+      }
+      .box1{
+        position: relative;
+      }
+      .box1 img{
+        width:100000px;
+        height:50px;
+        margin-top: 50px;;
+      }
+      nav {
+        position: absolute; /*固定导航栏位置*/
+        top:50px;
+
+      }
+      nav ul {
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        width: 500px;
+        height: 100%;
+        
+      }
+
+      nav a {
+        color: #fff;
+        padding: 0.5em 1em;
+      }
+      nav a:hover {
+        color: #ff4400;
+      }
+
+      nav ul li a:link,
+      nav ul li a:visited {
+        /*单个菜单的具体属性*/
+        display: block;
+        width: 238px;
+        height: 100%;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 10px;
+        background-image: url("https://img2.baidu.com/it/u=4002953843,4074290230&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=375");
+      }
+
+      nav ul li a:hover,
+      nav ul li a:active {
+        /*设定鼠标点击 移动过的属性*/
+        background-color: #fff;
+      }
+
+      nav ul li ul {
+        /* 二级菜单整体设定   */
+        display: none; /* 隐藏二级菜单列表*/
+        position: absolute; /*二级菜单的位置固定*/
+      }
+      nav ul li:hover ul {
+        display: block; /*二级菜单  将显示为块级元素*/
+        width: auto; /*消除二级菜单的滚动条，因为继承了父级的宽度*/
+      }
+      nav ul li ul li {
+        float: none; /*消除二级菜单的浮动*/
+        background-color: #fff;
+        width: auto;
+      }
+     
+     .box2 img{
+        margin-top: 20px;
+        width:400px;
+        height:300px;
+     }
+     .box3 img{
+        position: fixed;
+        bottom:50px;
+        right:50px;
+        background-color: #fff;
+        width: 80px;
+        height: 50;
+     
+     }
+   
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="box1">
+            <img src="https://img2.baidu.com/it/u=4002953843,4074290230&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=375" alt="">
+        </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="">首页</a>
+          <ul>
+            <li>
+              <a href="">详细</a>
+            </li>
+            <li>
+              <a href="#">战区</a>
+            </li>
+            <li>
+              <a href="#">地区</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">商城</a>
+          <ul>
+            <li>
+              <a href="">积分商城</a>
+            </li>
+            <li>
+              <a href="">战区商城</a>
+            </li>
+            <li>
+              <a href="">游戏购买</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">页游</a>
+        </li>
+        <li>
+          <a href="">排行榜</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="box2">
+            <table>
+                <tr>
+                    <td>
+           <img src="https://img0.baidu.com/it/u=3421122957,3807023846&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" alt="">
+                        </td>
+                        <td>AK-47自动步枪（英文：AK-47 Assault Rifle  ，俄文：1947-год Автомат Калашникова），是苏联枪械设计师米哈伊尔·季莫费耶维奇·卡拉什尼科夫所设计的一型自动步枪。</td>
+                </tr>
+                 <tr>
+                    <td>
+           <img src="https://img1.baidu.com/it/u=104176983,314181805&fm=253&fmt=auto&app=138&f=GIF?w=667&h=500" alt="">
+                        </td>
+                        <td>加特林机枪（Gatling Gun）是一款手动型多管旋转机关枪，由美国人理查·乔登·加特林（Richard Jordan Gatling）在1860年设计而成。其人名一译格林，故此枪也被译作格林机枪或译作盖特机枪/机炮，是在世界范围内大规模实用化的第一支机枪。</td>
+                </tr>
+                <tr>
+                    <td>
+           <img src="https://img1.baidu.com/it/u=401868323,2407365554&fm=253&fmt=auto&app=138&f=JPEG?w=553&h=246" alt="">
+                        </td>
+                        <td>95式自动步枪（简称95式，又称：QBZ95式自动步枪），是由中国兵器装备集团公司208研究所研制的一款突击步枪。总设计师为中国工程院院士朵英贤，属于5.8mm枪族一部分，为中国人民解放军与武警部队的制式步枪之一。</td>
+                </tr>
+                <tr>
+                    <td>
+           <img src="https://img2.baidu.com/it/u=184806832,856514182&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500" alt="">
+                        </td>
+                        <td>M82A1狙击步枪（英文：M82A1 Sniper Rifle [4]  ，绰号：轻50），是由美国巴雷特公司研制的一型大口径狙击步枪。M82A1狙击步枪作为重型特殊用途狙击步枪（英文：Special Application Scoped Rifle，缩写：SASR），是美军特种部队装备和主要西方国家的军队使用的枪械。M82A1半自动狙击步枪，采用枪管短后坐原理，半自动发射方式，其使用勃朗宁M2重机枪的大口径12.7×99 NATO（.50 BMG，12.7 毫米）弹药。</td>
+                </tr>
+
+            </table>
+           </div>
+    </main>
+    <footer>
+        <div class="box3">
+            <img src="https://img1.baidu.com/it/u=2157970950,1910670682&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1670432400&t=e6381b3e2b133a401cd84ce1a169e6cf" alt="">
+        </div>
+    </footer>
+  </body>
+</html>
+
